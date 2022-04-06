@@ -8,52 +8,58 @@
 <body>
 	<header class="mx-auto gr-1-b container-medium-b">
 		<nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-4 nav-b">
-			<div class="container">
-				<picture>
+			<div class="container nav-b__container">
+				<a href="tel:123-456-789" class="px-3">
 					<img src="./public/images/call.png" alt="call" class="d-lg-none">
-				</picture>
-				<a class="navbar-brand me-xxl-0" href="/">
+				</a>
+				<a class="navbar-brand me-0 me-md-2 me-xxl-0" href="/">
 					<picture>
 						<source media="(max-width: 991px)" srcset="./public/images/webarray-sm.png">
 						<img src="./public/images/webarray.png" alt="webarray">
 					</picture>
 				</a>
-				<button class="navbar-toggler border-0 shadow-none hamburger-btn-b" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler border-0 shadow-none px-3 hamburger-btn-b" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<img src="./public/images/Menu.png" alt="hamburger menu">
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-lg-between ms-xl-5 main-menu-b">
-						<li class="nav-item ms-xxl-4">
+				<div class="collapse navbar-collapse nav-b__main-menu-container" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-lg-between ms-xl-5 text-center text-lg-start py-3 py-lg-0 main-menu-b">
+						<li class="nav-item py-2 py-lg-0 ms-xxl-4">
 							<a class="nav-link main-menu-b__link active" aria-current="page" href="#">FEATURES</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item py-2 py-lg-0">
 							<a class="nav-link main-menu-b__link" href="#">DEVICES</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item py-2 py-lg-0">
 							<a class="nav-link main-menu-b__link" href="#">PRICING</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link btn-mc-1 text-white rounded main-menu-b__link main-menu-b__link--last" href="#">Get A Quote</a>
+						<li class="nav-item py-2 py-lg-0">
+							<a class="nav-link btn-mc-1 text-white rounded-3 main-menu-b__link main-menu-b__link--last" href="#">Get A Quote</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<div class="container">
-			SALES: 000 000
+		<div class="text-center py-1 info-belt-b">
+			<span class="info-belt-b__highlight">SALES</span>: 000 000 000
 		</div>
 		<div class="container position-relative main-slider-b">
-			<div class="position-absolute main-slider-b__prev-btn">
+			<div class="position-absolute d-none d-xxl-block main-slider-b__prev-btn">
 				<img src="./public/images/left-arrow.png" class="pointer-b" alt="left arrow">
 			</div>
 			<div class="main-slider-b__init">
-				<div>
-					Build better connections
-					and deliver amazing
-					customer experiences.
-					<div>
-						<a href="#" class="text-decoration-none rounded d-inline-block btn-black-b">Start now</a>
+				<div class="d-flex align-items-center position-relative">
+					<div class="flex-grow-1">
+						<div class="main-slider-b__content-container text-center text-lg-start">
+							<h2 class="text-white main-slider-b__title">Build better <span class="main-slider-b__highlight">connections</span> and deliver <span class="main-slider-b__highlight">amazing</span> customer experiences.</h2>
+							<div class="w-100 mt-lg-5 d-flex flex-column align-items-center mt-5 mt-lg-0 d-lg-block">
+								<a href="#" class="text-decoration-none rounded-3 d-lg-inline-block me-lg-4 mb-4 mb-lg-0 btn-black-b btn-black-b--active">Start now</a>
+								<a href="#" class="text-decoration-none rounded-3 d-lg-inline-block btn-black-b">Start now</a>
+							</div>
+						</div>
 					</div>
+					<figure class="m-0 d-none d-lg-block">
+						<img src="./public/images/Header%20Image%20Woman.png" alt="woman">
+					</figure>
 				</div>
 				<div>
 					Build better connections
@@ -61,7 +67,7 @@
 					customer experiences.
 				</div>
 			</div>
-			<div class="position-absolute main-slider-b__next-btn">
+			<div class="position-absolute d-none d-xxl-block main-slider-b__next-btn">
 				<img src="./public/images/right-arrow.png" class="pointer-b" alt="right arrow">
 			</div>
 		</div>

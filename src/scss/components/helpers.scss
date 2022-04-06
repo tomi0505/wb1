@@ -7,16 +7,36 @@
 }
 
 .btn-black-b {
-  padding: 14px 20px;
+  padding: 5px 40px;
   color: $black;
+  @include font(36);
 
   &:hover {
+    color: $black;
+  }
+
+  &--active {
     color: $white;
     background-color: $black;
-    transition: .4s;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  @media(max-width: 991px) {
+    padding: 7px 60px;
+    border: 2px solid $black;
+    @include font(20);
   }
 }
 
 .container-medium-b {
   max-width: 1366px;
+}
+
+.container {
+  @media(min-width: 1400px) {
+    max-width: 1180px !important;
+  }
 }

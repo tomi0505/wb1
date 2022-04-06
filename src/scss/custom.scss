@@ -2,6 +2,7 @@ html {
   @media(max-width: 991px) {
     font-size: 14px;
   }
+  overflow: hidden;
 }
 
 body {
@@ -10,6 +11,28 @@ body {
 
 .nav-b {
   background-color: rgba(255,255,255,.4) !important;
+
+  &__container {
+    @media(max-width: 991px) {
+      display: grid !important;
+      grid-template-columns: 70px auto 70px;
+    }
+  }
+
+  &__main-menu-container {
+    @media(max-width: 991px) {
+      grid-column: 1/4;
+    }
+  }
+}
+
+.info-belt-b {
+  @include font(19);
+  background-color: rgba(255, 255, 255, 0.3) !important;
+
+  &__highlight {
+    font-family: 'motiva_sansmedium';
+  }
 }
 
 .main-menu-b {
@@ -26,11 +49,11 @@ body {
   }
 }
 
-.hamburger-btn-b {
-
-}
-
 .main-slider-b {
+  @media(max-width: 991px) {
+    padding: 70px 0;
+  }
+
   .theSame {
     top: 50%;
     transform: translateY(-50%);
@@ -38,12 +61,38 @@ body {
   }
 
   &__prev-btn {
-    left: 0;
+    left: -50px;
     @extend .theSame;
   }
 
   &__next-btn {
-    right: 0;
+    right: -50px;
     @extend .theSame;
+  }
+
+  &__content-container {
+    @media(min-width: 992px) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__title {
+    @include font(65);
+    max-width: 900px;
+
+    @media(max-width: 991px) {
+      @include font(40);
+    }
+
+    @media(min-width: 992px) {
+      font-family: 'motiva_sansextrabold';
+    }
+  }
+
+  &__highlight {
+    font-family: 'motiva_sansextrabold';
   }
 }
