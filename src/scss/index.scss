@@ -1,3 +1,6 @@
-@import "../public/fonts/motiva/stylesheet";
+@import "../fonts/motiva/stylesheet.css";
+@import "components/vars";
+@import "components/helpers";
+@import 'components/custom-bootstrap';
 @import './custom.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap';

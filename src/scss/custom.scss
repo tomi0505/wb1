@@ -1,11 +1,25 @@
-// Components
-@import 'components/custom-bootstrap';
-
 body {
-  font-family: 'motiva_sansregular';
+  font-family: 'motiva_sansregular' !important;
 }
 
-// Your custom CSS
-.container-medium-b {
-  max-width: 1366px;
+.nav-b {
+  background-color: rgba(255,255,255,.4) !important;
+}
+
+.main-slider-b {
+  .theSame {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+
+  &__prev-btn {
+    left: 0;
+    @extend .theSame;
+  }
+
+  &__next-btn {
+    right: 0;
+    @extend .theSame;
+  }
 }

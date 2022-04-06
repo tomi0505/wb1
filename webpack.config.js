@@ -39,7 +39,7 @@ const config = {
         ],
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|png|jpe?g|svg|woff|woff2)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -74,6 +74,10 @@ const config = {
     ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
