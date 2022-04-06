@@ -1,0 +1,12 @@
+@import '../../node_modules/bootstrap/scss/_functions';
+@import '../../node_modules/bootstrap/scss/_variables';
+@import "./vars";
+
+$custom-colors: (
+  "mc-1": $mc-1
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$body-bg: cadetblue;
