@@ -1,9 +1,33 @@
+html {
+  @media(max-width: 991px) {
+    font-size: 14px;
+  }
+}
+
 body {
   font-family: 'motiva_sansregular' !important;
 }
 
 .nav-b {
   background-color: rgba(255,255,255,.4) !important;
+}
+
+.main-menu-b {
+  &__link {
+    color: $mc-4 !important;
+    @include font(24);
+    font-family: 'motiva_sansmedium';
+
+    &--last {
+      padding: 6px 44px !important;
+      @include font(28);
+      font-family: 'motiva_sansregular';
+    }
+  }
+}
+
+.hamburger-btn-b {
+
 }
 
 .main-slider-b {
