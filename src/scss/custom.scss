@@ -2,7 +2,7 @@ html {
   @media(max-width: 991px) {
     font-size: 14px;
   }
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -94,5 +94,28 @@ body {
 
   &__highlight {
     font-family: 'motiva_sansextrabold';
+  }
+}
+
+.top-rated-b {
+  @include font(24);
+
+  &__title {
+    @include font(64);
+    font-family: 'motiva_sansextrabold';
+    color: $mc-1;
+
+    @media(max-width: 991px) {
+      @include font(32);
+    }
+  }
+
+  &__subtitle {
+    font-family: 'motiva_sansextrabold';
+    @include font(60);
+
+    @media(max-width: 991px) {
+      @include font(30);
+    }
   }
 }
