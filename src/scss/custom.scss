@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: 'motiva_sansregular' !important;
+  background-color: $white;
 }
 
 .nav-b {
@@ -116,6 +117,20 @@ body {
 
     @media(max-width: 991px) {
       @include font(30);
+    }
+  }
+}
+
+.call-box-b {
+  @include font(24);
+
+  &__title {
+    @include font(32);
+    font-family: 'motiva_sansextrabold';
+
+    @media(max-width: 991px) {
+      margin-left: 10px;
+      display: inline-block;
     }
   }
 }
