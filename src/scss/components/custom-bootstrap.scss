@@ -2,7 +2,8 @@
 @import '../../node_modules/bootstrap/scss/_variables';
 
 $custom-colors: (
-  "mc-1": $mc-1
+  "mc-1": $mc-1,
+  "white-b": $white
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

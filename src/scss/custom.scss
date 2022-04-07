@@ -134,3 +134,16 @@ body {
     }
   }
 }
+
+.phone-promo-b {
+  background-color: $mc-5;
+
+  &__title {
+    @include font(60);
+    font-family: 'motiva_sansextrabold';
+
+    @media(max-width: 991px) {
+      @include font(32);
+    }
+  }
+}
