@@ -6,6 +6,18 @@
   cursor: pointer;
 }
 
+.bg-mc-5-b {
+  background-color: $mc-5;
+}
+
+.bg-mc-7-b {
+  background-color: $mc-7;
+}
+
+.bg-mc-8-b {
+  background-color: $mc-8;
+}
+
 .btn-black-b {
   padding: 5px 40px;
   color: $black;
@@ -76,6 +88,11 @@
     font-family: 'motiva_sansmedium';
     top: 80px;
   }
+}
+
+.btn-secondaryb-b {
+  padding: 7px 25px;
+  @include font(28);
 }
 
 .container-medium-b {
