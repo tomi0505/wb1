@@ -333,9 +333,44 @@ body {
   &__title {
     font-family: 'motiva_sansextrabold';
     @include font(32);
+
+    @media(max-width: 991px) {
+      @include font(20);
+    }
   }
 
   &__content {
     @include font(24);
+
+    @media(max-width: 991px) {
+      @include font(16);
+    }
+  }
+
+  &__img {
+    @media(max-width: 991px) {
+      max-width: 100px !important;
+    }
+  }
+}
+
+.searching-b {
+  background-color: $mc-9;
+
+  &__title {
+    font-family: 'motiva_sansextrabold';
+    @include font(64);
+
+    @media(max-width: 991px) {
+      @include font(32);
+    }
+  }
+
+  &__subtitle {
+    @include font(32);
+
+    @media(max-width: 991px) {
+      @include font(18);
+    }
   }
 }

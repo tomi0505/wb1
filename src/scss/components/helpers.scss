@@ -93,6 +93,12 @@
 .btn-secondaryb-b {
   padding: 7px 25px;
   @include font(28);
+
+  &--small-font {
+    @media(max-width: 991px) {
+      @include font(20);
+    }
+  }
 }
 
 .container-medium-b {
