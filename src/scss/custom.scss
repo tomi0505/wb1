@@ -31,6 +31,10 @@ body {
   @include font(19);
   background-color: rgba(255, 255, 255, 0.3) !important;
 
+  @media(min-width: 992px) {
+    padding-right: 10%;
+  }
+
   &__highlight {
     font-family: 'motiva_sansmedium';
   }
@@ -372,5 +376,69 @@ body {
     @media(max-width: 991px) {
       @include font(18);
     }
+  }
+}
+
+.footer-menu-b {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-image: url("../public/images/1-small.png");
+
+  &__link {
+    @include font(16);
+  }
+}
+
+.footer-menu-desktop-b {
+  list-style-type: none;
+
+  &__simple {
+    &:nth-child(1) {
+      &::before {
+        margin-right: 8px;
+        content: url("../public/images/1.png");
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        margin-right: 8px;
+        content: url("../public/images/2.png");
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        margin-right: 8px;
+        content: url("../public/images/3.png");
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        margin-right: 8px;
+        content: url("../public/images/4.png");
+      }
+    }
+  }
+
+  &__link {
+    @include font(24);
+    font-family: 'motiva_sansbold';
+  }
+}
+
+.copyright-b {
+  &::before {
+    content: url("");
+  }
+
+  &__copy {
+    @include font(16);
+  }
+
+  &__rights {
+    color: $mc-11;
   }
 }
