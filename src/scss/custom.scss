@@ -301,3 +301,41 @@ body {
     font-family: 'motiva_sansmedium';
   }
 }
+
+.help-b {
+  background-color: $mc-9;
+
+  &__title {
+    font-family: 'motiva_sansextrabold';
+    @include font(90);
+
+    @media(max-width: 991px) {
+      @include font(40);
+    }
+  }
+
+  &__green-arrow {
+    top: calc(100% - 5px);
+
+    @media(max-width: 991px) {
+      width: 80px;
+    }
+  }
+}
+
+.help-next-b {
+  background-color: $mc-10;
+}
+
+.help-next-box-b {
+  border-radius: 10px;
+
+  &__title {
+    font-family: 'motiva_sansextrabold';
+    @include font(32);
+  }
+
+  &__content {
+    @include font(24);
+  }
+}
