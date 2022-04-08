@@ -56,6 +56,28 @@
   }
 }
 
+.btn-mc-6-b {
+  margin-top: -60px;
+  padding: 15px 45px;
+  @include font(36);
+  color: $white;
+  border: 0;
+  background-color: $mc-5;
+  z-index: 1;
+
+  &--small {
+    @include font(20);
+    font-family: 'motiva_sansmedium';
+  }
+
+  &--smaller {
+    color: $mc-5;
+    @include font(20);
+    font-family: 'motiva_sansmedium';
+    top: 80px;
+  }
+}
+
 .container-medium-b {
   margin-left: auto;
   margin-right: auto;

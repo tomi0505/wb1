@@ -3,7 +3,8 @@
 
 $custom-colors: (
   "mc-1": $mc-1,
-  "white-b": $white
+  "mc-6": $mc-6,
+  "white-b": $white,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

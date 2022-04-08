@@ -136,7 +136,9 @@ body {
 }
 
 .phone-promo-b {
+  max-width: 1200px;
   background-color: $mc-5;
+  z-index: 1;
 
   &__title {
     @include font(60);
@@ -146,4 +148,16 @@ body {
       @include font(32);
     }
   }
+}
+
+.cta-b {
+  margin-top: -170px;
+  padding: 240px 0 100px;
+  background-color: $mc-6;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+
+.img-bg-container-b {
+  min-height: 316px;
+  background-image: url('../public/images/bg-mobile.png');
 }
